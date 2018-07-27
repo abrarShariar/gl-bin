@@ -44,7 +44,7 @@ void drawScene() {
 
 	//clockwise
 	glPushMatrix();
-		glTranslatef(3.2, 0.0, 0.0);
+		glTranslatef(4.0, 0.0, 0.0);
 		glRotatef(_angle, 0.0, 0.0, 1.0);
 		glScalef(0.5,0.5,0.5);
 
@@ -90,7 +90,7 @@ void drawScene() {
 
 	//anticlock wise
 	glPushMatrix();
-		glTranslatef(-3.2, 0.0, 0.0);
+		glTranslatef(-4.0, 0.0, 0.0);
 		glRotatef(-_angle, 0.0, 0.0, 1.0);
 		glScalef(0.5,0.5,0.5);
 
@@ -147,7 +147,7 @@ void update(int value) {
 	}
 
 	glutPostRedisplay();
-	glutTimerFunc(25, update, 0);
+	glutTimerFunc(5, update, 0);
 }
 
 
@@ -167,7 +167,7 @@ int main(int argc, char** argv) {
 
 	glutReshapeFunc(handleResize);
 
-	glutTimerFunc(25, update, 0); //Add a timer
+	glutTimerFunc(5, update, 0); //Add a timer
 
 	glutMainLoop();
 	return 0;
