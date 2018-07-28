@@ -41,7 +41,6 @@ void drawScene() {
 	glLoadIdentity(); //Reset the drawing perspective
 	glTranslatef(0.0, 0.0, -10.0); //Move forward 10 units
 
-
 	//clockwise
 	glPushMatrix();
 		glTranslatef(4.0, 0.0, 0.0);
@@ -86,7 +85,6 @@ void drawScene() {
 	drawCircle(0.7);
 
 	glPopMatrix();
-
 
 	//anticlock wise
 	glPushMatrix();
